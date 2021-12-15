@@ -1,6 +1,6 @@
 # 3DHologram
 
-This project implements a 3D holographic projector. The 3D Computer Generated Hologram (CGH) we compute allows per-pixel focal length control. Our code described below computes a CGH from an input intensity image the corresponding input depth map image.
+This project implements a 3D holographic projector. The 3D Computer Generated Hologram (CGH) we compute allows per-pixel focal length control. Our code described below computes a CGH from an input intensity image and the corresponding input depth map image.
 
 ## Results
 
