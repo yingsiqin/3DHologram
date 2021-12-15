@@ -1,5 +1,7 @@
 # 3DHologram
 
+This project implements a 3D holographic projector. The 3D Computer Generated Hologram (CGH) we compute allows per-pixel focal depth control. Our code described below computes a CGH from an input intensity image the corresponding input depth map image.
+
 ## Results
 
 We only show a finite range of depths for demonstration. Per-pixel focal control is possible by using an input image where each pixel is at a different depth.
