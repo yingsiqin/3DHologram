@@ -9,7 +9,7 @@ We only show a finite range of depths for demonstration. Per-pixel focal control
 ### Results (simulated and captured) for a multi-depth hologram
 The focusing depth range of the hologram is `[0.020m, 0.021m]`.
 
-The video `demo.mp4` shows a live video recording of varying focusing depth of the camera.
+The video `demo.mp4` shows a live video recording of varying focusing depths of the camera lens.
 
 We can see that from depth 1 to depth 5, different parts of the face are focused and de-focused. It is apparent that the ears and the face center are at different depths. When the face center is focused, the ears go out of focused, and vice versa. 
 
