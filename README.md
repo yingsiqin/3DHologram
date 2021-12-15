@@ -1,6 +1,6 @@
 # 3DHologram
 
-This project implements a 3D holographic projector. The 3D Computer Generated Hologram (CGH) we compute allows per-pixel focal length control. Our code described below computes a CGH from an input intensity image and the corresponding input depth map image.
+This project implements a 3D holographic projector. The 3D Computer Generated Hologram (CGH) we compute allows per-pixel focal length control. Our code described below computes a CGH from an input intensity image and the corresponding input depth map image. 
 
 ## Results
 
@@ -55,11 +55,11 @@ The generated outputs are:
 -  `encodeAmplitude.m`: encode a complex-valued hologram into a phase-only hologram using one of the two modes: the double phase method mode `dpe` and direct amplitude removal mode `amprm`
 
 #### Data Files
-- The `data` folder has:
-  -  `CGH`: computed generated 3D holograms
-  -  `experimentalresults`: the captured results using our optics setup
-  -  `reconstructions`: the simulated results
-  -  `scenes`: input images
+The `data` folder has:
+-  `CGH`: computed generated 3D holograms
+-  `experimentalresults`: the captured results using our optics setup
+-  `reconstructions`: the simulated results
+-  `scenes`: input images
 
 ## Methods
 As explained in our `Final_Project_Report.pdf`:
