@@ -1,5 +1,5 @@
 function HP = encodeAmplitude(H, mode)
-% % remove the phase of the hologram
+% % remove the amplitude of the hologram
 % % when mode is dpe, use double phase encoding
 % % when mode is magrm, remove the amplitude directly
     if mode=='dpe'

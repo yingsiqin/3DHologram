@@ -1,7 +1,8 @@
 function [HPdisp, IRdisp] = propagateMultiDepths(Ifname, Zfname, ...
     numdepths, slmpitch, lambda, mode, Hsize)
-% % takes a point cloud file name, scale intensity vertically, and 
-% % computes a 2-depth hologram
+% % take the file names of input image (intensity and depth map),  
+% % discretized the depth map to numdepths depths, and computes 
+% % a multi-depth hologram
 
     % read the image
     I = im2double(imread(Ifname));

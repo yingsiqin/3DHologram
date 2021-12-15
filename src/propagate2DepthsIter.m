@@ -1,7 +1,7 @@
 function [HPdisp, IR1disp, IR2disp] = propagate2DepthsIter(fname, z1, z2, ...
                                     slmpitch, lambda, mode, numIter, Hsize)
-% % takes an intensity image, scale intensity vertically, and 
-% % computes a 2-depth hologram
+% % takes an intensity image, and computes a 2-depth hologram using
+% % by forward and backward propagating iteravetily for numIter times
 
     % read the image
     I=imread(fname);
