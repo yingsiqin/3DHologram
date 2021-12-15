@@ -4,14 +4,14 @@
 
 We only show a finite range of depths for demonstration. Per-pixel focal control is possible by using an input image where each pixel is at a different depth.
 
-### Results (simulated and captured) for multi-depth hologram
+### Results (simulated and captured) for a multi-depth hologram
 The focusing depth range of the hologram is `[0.020m, 0.021m]`.
 
 We can see that from depth 1 to depth 5, different parts of the face are focused and de-focused. It is apparent that the ears and the face center are at different depths. When the face center is focused, the ears go out of focused, and vice versa. 
 
 <img src="data/experimentalresults/faceresult.png" alt="faceresult" width="800"/>
 
-### Results (captured) for 2-depth hologram
+### Results (captured) for a 2-depth hologram
 The focusing depth range of the hologram is `[0.070m, 0.080m]`. 
 
 We can see that from left to right, the letter E and H get focused and de-focused interchangeably. It is apparent that the two depth planes are reconstructed.
