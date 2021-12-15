@@ -1,5 +1,5 @@
 function [HPdisp, IR1disp, IR2disp] = propagate2DepthsIter(fname, z1, z2, ...
-                                    slmpitch, lambda, mode, numIter)
+                                    slmpitch, lambda, mode, numIter, Hsize)
 % % takes an intensity image, scale intensity vertically, and 
 % % computes a 2-depth hologram
 
@@ -85,6 +85,8 @@ function [HPdisp, IR1disp, IR2disp] = propagate2DepthsIter(fname, z1, z2, ...
     
     % save the hologram
     HPdisp = mat2gray(angle(HP));
+    Hscale = Hsize(1)/ylenH;
+    HPdisp = imresize(HPdisp, Hscale);
     savename = strcat('../data/CGH/3DHologram_', string(savename(end)), '_2d_',mode, '_iter',int2str(numIter), '.png');
     imwrite(HPdisp,savename);
 

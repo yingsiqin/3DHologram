@@ -19,7 +19,7 @@ Hsize = [numYpix numXpix];
 %                             slmpitch, lambda, mode, Hsize);
 
 % [HPdisp, IR1disp, IR2disp] = propagate2DepthsIter(fname, z1, z2, ...
-%                             slmpitch, lambda, mode, numIter);
+%                             slmpitch, lambda, mode, numIter, Hsize);
 
 Ifname = '../data/scenes/faceI.png';
 Zfname = '../data/scenes/faceZ.png';
