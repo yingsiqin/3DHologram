@@ -7,7 +7,7 @@ This project implements a 3D holographic projector. The 3D Computer Generated Ho
 We only show a finite range of depths for demonstration. Per-pixel focal control is possible by using an input image where each pixel is at a different depth.
 
 ### Results (simulated and captured) for a multi-depth hologram
-The focusing depth range of the hologram is `[0.020m, 0.021m]`.
+The depth range of the hologram is `[0.020m, 0.021m]`.
 
 The video `demo.mp4` shows a live video recording of the displayed hologram at varying focusing depths.
 
@@ -16,7 +16,7 @@ We can see that from depth 1 to depth 5, different parts of the face are focused
 <img src="data/experimentalresults/faceresult.png" alt="faceresult" width="800"/>
 
 ### Results (captured) for a 2-depth hologram
-The focusing depth range of the hologram is `[0.070m, 0.080m]`. 
+The depth range of the hologram is `[0.070m, 0.080m]`. 
 
 We can see that from left to right, the letter E and H get focused and de-focused interchangeably. It is apparent that the two depth planes are reconstructed.
 
