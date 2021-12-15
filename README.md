@@ -55,7 +55,7 @@ The generated outputs are:
 -  `encodeAmplitude.m`: encode a complex-valued hologram into a phase-only hologram using one of the two modes: the double phase method mode `dpe` and direct amplitude removal mode `amprm`
 
 #### Data Files
-The `data` folder has:
+The `data` folder has subfolders:
 -  `CGH`: computed generated 3D holograms
 -  `experimentalresults`: the captured results using our optics setup
 -  `reconstructions`: the simulated results
