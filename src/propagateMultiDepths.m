@@ -62,7 +62,7 @@ function [HPdisp, IRdisp] = propagateMultiDepths(Ifname, Zfname, ...
         IRdisp(z,:,:) = IR1disp;
         imname1 = strcat('../data/reconstructions/sim_', ...
             string(savename(end)), '_', mode, '_d-', int2str(z),'.png');
-%         imwrite(IR1disp, imname1);
+        imwrite(IR1disp, imname1);
     end   
     
     % save the hologram
