@@ -58,4 +58,5 @@ The generated outputs are:
   -  `scenes`: input images
 
 ## Methods
+As explained in our `Final_Project_Report.pdf`:
 <img src="methods.jpg" alt="methods" width="1000"/>
