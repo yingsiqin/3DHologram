@@ -48,8 +48,8 @@ The generated outputs are:
 - `propagate2Depths.m`: propagation function for an image of **2 depths**, depth `z1` for the left half, depth `z2` for the right half
 - `propagate2DepthsIter.m`: **iterative propagation** function for an image of 2 depths; backward + forward count as one iteration of propagation
 -  `propagateMultiDepths.m`: propagation function allowing **per-pixel focal control**; takes as input the file names of the intensity image and depth map image as well as the number of depths `numdepths` to discretize the depth map to
--  `genHolo1Depth.m`: forward propagation function to generate hologram `H`
--  `reconHoloAt1Depth.m`: backward propagation function to simulate a reconstructed hologram view
+-  `genHolo1Depth.m`: **forward propagation** function to generate hologram `H`
+-  `reconHoloAt1Depth.m`: **backward propagation** function to simulate a reconstructed hologram view
 -  `encodeAmplitude.m`: encode a complex-valued hologram into a phase-only hologram using one of the two modes: the double phase method mode `dpe` and direct amplitude removal mode `amprm`
 
 #### Data Files
