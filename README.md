@@ -1,6 +1,6 @@
 # 3DHologram
 
-This project implements a 3D holographic projector. The 3D Computer Generated Hologram (CGH) we compute allows per-pixel focal length control. Our code described below computes a CGH from an input intensity image and the corresponding input depth map image. 
+This project implements a 3D holographic projector. The 3D Computer Generated Hologram (CGH) we compute allows per-pixel focal length control. Our code described below computes a CGH from an input intensity image and the corresponding input depth map image.
 
 ## Results
 
@@ -11,12 +11,12 @@ The depth range of the hologram is `[0.020m, 0.021m]`.
 
 The video `demo.mp4` shows a live video recording of the displayed hologram at varying focusing depths.
 
-We can see that from depth 1 to depth 5, different parts of the face are focused and de-focused. It is apparent that the ears and the face center are at different depths. When the face center is focused, the ears go out of focused, and vice versa. 
+We can see that from depth 1 to depth 5, different parts of the face are focused and de-focused. It is apparent that the ears and the face center are at different depths. When the face center is focused, the ears go out of focused, and vice versa.
 
 <img src="data/experimentalresults/faceresult.png" alt="faceresult" width="800"/>
 
 ### Results (captured) for a 2-depth hologram
-The depth range of the hologram is `[0.070m, 0.080m]`. 
+The depth range of the hologram is `[0.080m, 0.085m]`.
 
 We can see that from left to right, the letter E and H get focused and de-focused interchangeably. It is apparent that the two depth planes are reconstructed.
 
@@ -35,7 +35,7 @@ To replicate my simulation results, `cd src` and run `simulateHologram.m`. This 
 
 The input images to the pipeline are in the `data/scenes/` folder. The input used for the multi-depth hologram above is:
 
-<img src="data/scenes/inputface.png" alt="inputface" width="400"/> 
+<img src="data/scenes/inputface.png" alt="inputface" width="400"/>
 
 where the depth map values is discretized into 13 depth value bins.
 

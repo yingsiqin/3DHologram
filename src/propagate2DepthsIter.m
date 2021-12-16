@@ -75,12 +75,12 @@ function [HPdisp, IR1disp, IR2disp] = propagate2DepthsIter(fname, z1, z2, ...
     IR1 = IR1(ystart:yend, xstart:xend);
     IR1disp = mat2gray(abs(IR1)); 
     savename = split(fname(1:end-4),"/");
-    imname1 = strcat('../data/reconstructions/sim_', string(savename(end)), '_d1_', mode, '_iter',int2str(numIter), '.png');
+    imname1 = strcat('../data/reconstructions/sim_', string(savename(end)), '_d1-',num2str(z1),'m_', mode, '_iter',int2str(numIter), '.png');
     imwrite(IR1disp, imname1); 
     IR2 = reconHoloAt1Depth(HP, z2, slmpitch, lambda);
     IR2 = IR2(ystart:yend, xstart:xend);
     IR2disp = mat2gray(abs(IR2)); 
-    imname2 = strcat('../data/reconstructions/sim_', string(savename(end)), '_d2_', mode, '_iter',int2str(numIter), '.png');
+    imname2 = strcat('../data/reconstructions/sim_', string(savename(end)), '_d2-',num2str(z2),'m_', mode, '_iter',int2str(numIter), '.png');
     imwrite(IR2disp, imname2);
     
     % save the hologram
@@ -106,8 +106,10 @@ function [HPdisp, IR1disp, IR2disp] = propagate2DepthsIter(fname, z1, z2, ...
     f3.Position = [100 100 1000 600];
     subplot 121
     imshow(IR1disp); 
-    title('simulated reconstruction on depth1');
+    title(strcat('d=',num2str(z1),'m'));
     subplot 122
     imshow(IR2disp); 
-    title('simulated reconstruction on depth2'); 
+    title(strcat('d=',num2str(z2),'m')); 
+    sgtitle("simulated reconstructions")
+
 end

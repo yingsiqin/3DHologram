@@ -9,11 +9,11 @@ function [HPdisp, IR1disp, IR2disp] = propagate2Depths(fname, z1, z2, ...
     [ylenI, xlenI] = size(I);
     I = im2double(I);
 
-%     % scale intensity vertically
-%     intensityramp = (0:1/(size(I,1)-1):1)';
-%     Iamp = repmat(intensityramp,1,size(I,2));
-%     I_scaled = I.*Iamp;
-%     I = I_scaled;
+    % scale intensity vertically
+    intensityramp = (0:1/(size(I,1)-1):1)';
+    Iamp = repmat(intensityramp,1,size(I,2));
+    I_scaled = I.*Iamp;
+    I = I_scaled;
 
     % set the size of the hologram
     ylenH = ylenI * 2; 
@@ -58,8 +58,8 @@ function [HPdisp, IR1disp, IR2disp] = propagate2Depths(fname, z1, z2, ...
     IR1disp = mat2gray(abs(IR1)); 
     IR2disp = mat2gray(abs(IR2)); 
     savename = split(fname(1:end-4),"/");
-    imname1 = strcat('../data/reconstructions/sim_', string(savename(end)), '_d1_', mode, '.png');
-    imname2 = strcat('../data/reconstructions/sim_', string(savename(end)), '_d2_', mode, '.png');
+    imname1 = strcat('../data/reconstructions/sim_', string(savename(end)), '_d1-',num2str(z1),'m_', mode, '.png');
+    imname2 = strcat('../data/reconstructions/sim_', string(savename(end)), '_d2-',num2str(z2),'m_', mode, '.png');
     imwrite(IR1disp, imname1); 
     imwrite(IR2disp, imname2);
     
@@ -79,7 +79,7 @@ function [HPdisp, IR1disp, IR2disp] = propagate2Depths(fname, z1, z2, ...
     % display the reconstructions
     f2 = figure;
     ax2 = axes(f2);
-    imshow(I, 'Parent', ax2);
+    imshow(I_scaled, 'Parent', ax2);
     title(ax2, 'input image')
     
     f3 = figure;

@@ -15,8 +15,8 @@ function [HPdisp, IRdisp] = propagateMultiDepths(Ifname, Zfname, ...
 
     % discretize depth values into numbins
     [Zd, ~] = discretize(Z, numdepths);
-%     zscale = 1/numdepths/10000;
-    zscale = 1/numdepths/400;
+    zscale = 1/numdepths/1000;
+%     zscale = 1/numdepths/400;
     zoffset = 0.02;
 
     % set the size of the hologram
